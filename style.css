@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+p,span,label{
+    font-size: 20px;
+}
+
+/* div{
+    border: 1px solid black;
+    margin: 2px;
+} */
+nav{
+    display: flex;
+    /* width: 90%; */
+    margin: 2.5rem ;
+    justify-content: center;
+    border-bottom: 2px solid green;
+}
+nav > div{
+    width: 50%;
+    margin-left: 2rem;
+}
+.socials div {
+    width: 3rem;
+
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.cont {
+    display: flex;
+    margin: 0 2.5rem;
+    border-bottom: 2px solid green;
+}
+.cont > div{
+    width: 50%;
+    margin: 2.5rem;
+
+}
+
+
+.img > .me {
+    height: 400px;
+}
+.intro{
+    padding: 2rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    
+}
+i{
+    
+        all: revert;
+      
+}
+.svg{
+    height: 2rem;
+}
+.responsive{
+    width: 50%;
+    max-width: 100%;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about > div.img{
+    display: flex;
+    justify-content: center;
+}
+.about > p{
+    width: 60%;
+}
+
+
+/* tools and technologies */
+.technoligies-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.techs-tools{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.techs-tools > div{
+    width: 30%;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+
+.techs-tools > div > i{
+    font-size: 2rem;
+}
+
+/* form */
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+}
+form div label, input{
+    display: block;
+    text-align: center;
+}
+
+input,textarea{
+    width: 100%;
+    resize: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+   
+    .techs-tools > div{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .cont{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center ;
+        align-items: center;
+    }
+    .cont > div{
+        width: 100%;
+        margin: 2.5rem;
+    
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav > *{
+        width: 100%;
+    }
+}
